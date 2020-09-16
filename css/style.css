@@ -13,6 +13,7 @@ body {
 }
 
 .mainDiv > div {
+    display: inline-block;
     width: 200px;
     height: 200px;
     box-sizing: border-box;
@@ -21,3 +22,35 @@ body {
     border: 1px solid black;
 }
 
+.red {
+    background-color: red;
+}
+.red2 {
+    background-color: yellow;
+    border-radius: 50%;
+}
+.red3 {
+    background-color: green;
+}
+
+.green {
+    background-color: red;
+}
+.green2 {
+    background-color: yellow;
+}
+.green3 {
+    background-color: green;
+    border-radius: 50%;
+}
+
+.yellow {
+    background-color: red;
+    border-radius: 50%;
+}
+.yellow2 {
+    background-color: yellow;
+}
+.yellow3 {
+    background-color: green;
+}
