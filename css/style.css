@@ -13,44 +13,63 @@ body {
 }
 
 .mainDiv > div {
-    display: inline-block;
     width: 200px;
     height: 200px;
     box-sizing: border-box;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     border: 1px solid black;
 }
 
 .red {
     background-color: red;
-}
-.red2 {
-    background-color: yellow;
     border-radius: 50%;
-}
-.red3 {
-    background-color: green;
 }
 
 .green {
-    background-color: red;
-}
-.green2 {
-    background-color: yellow;
-}
-.green3 {
     background-color: green;
     border-radius: 50%;
 }
 
 .yellow {
-    background-color: red;
+    background-color: yellow;
     border-radius: 50%;
 }
-.yellow2 {
-    background-color: yellow;
+
+.yellow {
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+    transition-property: transform;
+    transition-duration: 3s;
 }
-.yellow3 {
-    background-color: green;
-}
+
+.yellow:hover {
+    transform: rotateY(180deg);
+    }
+
+    .red{
+        position: relative;
+        animation: reda;
+        animation-duration: 3s;
+        animation-fill-mode: forwards;
+    }
+    
+    @keyframes reda {
+        0% {top: -200px}
+        100% {top: 0px}
+    }
+
+    .green {
+        opacity: 0;
+        animation-name: greena;
+        animation-duration: 3s;
+        animation-fill-mode: forwards;
+        animation-delay: 3s;
+        transition-property: transform;
+        transition-duration: 3s;
+    }
+
+    @keyframes greena {
+        0% {opacity: 0;}
+        100% {opacity: 1;}
